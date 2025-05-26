@@ -1,6 +1,6 @@
 ## 📦 Dataset
 
-We release **100 ImageNet papers** with page-level ground-truth labels.
+We release **100-120 ImageNet papers** with page-level ground-truth labels.
 
 ```
 
