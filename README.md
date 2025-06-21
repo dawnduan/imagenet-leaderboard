@@ -7,7 +7,6 @@ We release **200 ImageNet papers**, including **100 development** and **100 vali
 ```
 data/
 ├── dev_labels.csv   # gold labels (see table below)
-├── dev_labels.json  # same content in JSON
 ├── val_labels.csv   # validation set
 ```
 
