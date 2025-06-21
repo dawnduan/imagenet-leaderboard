@@ -1,39 +1,47 @@
 ## 📦 Dataset
 
-We release **100-120 ImageNet papers** with page-level ground-truth labels.
+We release **200 ImageNet papers**, including **100 development** and **100 validation** papers, each with **ground-truth labels**.
+
+### 📁 Directory Structure
 
 ```
-
 data/
-├── dev\_labels.csv         # gold labels (see columns below)
-└── dev\_labels.json        # same content in JSON
+├── dev_labels.csv   # gold labels (see table below)
+├── dev_labels.json  # same content in JSON
+├── val_labels.csv   # validation set
+```
 
-````
+### 🏷️ Columns
 
-| Column | Description |
-|--------|-------------|
-| `arxiv_name` | PDF filename (`1312.6229v4.pdf`, …) |
-| `top1_acc`   | Canonical Top-1 ImageNet accuracy **(in %)**; `404` means the paper never reports a usable value |
+| Column       | Description                                                                 |
+|--------------|-----------------------------------------------------------------------------|
+| `arxiv_name` | PDF filename (e.g., `1312.6229v4.pdf`)                                      |
+| `top1_acc`   | Top-1 ImageNet accuracy **(in %)**; `NA` means no Top-1 ImageNet accuracy present  |
 
-#### Quick peek
+> `NA` → metric absent (e.g., only Top-5 or validation results are reported).
+
+---
+
+### 🔍 Quick Peek
+
 ```python
 import pandas as pd
 df = pd.read_csv('data/dev_labels.csv')
 print(df.head(8))
-````
-
-```
-       arxiv_name  top1_acc  
-0   1312.6229v4.pdf     85.82
-1   1406.2732v1.pdf    404.00
-2   1412.0296v1.pdf    404.00
-3   1412.6598v2.pdf    404.00
-4  1502.03167v3.pdf    404.00
-5  1503.01224v2.pdf    404.00
-6  1506.04701v3.pdf    404.00
-7  1510.00921v6.pdf    404.00   
 ```
 
-`404` → metric absent (e.g.\ only Top-5 or validation split).
+```
+       arxiv_name   top1_acc
+0  1312.6229v4.pdf     85.82
+1  1406.2732v1.pdf      NA
+2  1412.0296v1.pdf      NA
+3  1412.6598v2.pdf      NA
+4  1502.03167v3.pdf     NA
+5  1503.01224v2.pdf     NA
+6  1506.04701v3.pdf     NA
+7  1510.00921v6.pdf     NA
+```
 
-> All PDFs are distributed for research and benchmarking only; copyright remains with the original publishers.
+---
+
+📌 **Note**: All PDFs are distributed strictly for research and benchmarking purposes. Copyright remains with the original publishers.
