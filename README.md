@@ -26,7 +26,7 @@ data/
 
 ```python
 import pandas as pd
-df = pd.read_csv('data/dev_labels.csv')
+df = pd.read_csv('data/val_labels.csv')
 print(df.head(8))
 ```
 
