@@ -52,9 +52,10 @@ For arXiv papers, this field is left blank (a canonical arXiv link can be constr
 **Example (CSV format):**
 
 ```csv
-arxiv_name,top1_acc,url
-1312.6229v4.pdf,85.82,
-Yan_HD-CNN_Hierarchical_Deep_ICCV_2015_paper.pdf,63.34,https://openaccess.thecvf.com/content_iccv_2015/papers/Yan_HD-CNN_Hierarchical_Deep_ICCV_2015_paper.pdf
+       arxiv_name                                top1_acc                             url
+90  1312.6229v4.pdf                                85.82
+91  CNN_Hierarchical_Deep_ICCV_2015_paper.pdf       NA          https://openaccess.thecvf.com/content_iccv_2015/papers/Yan_HD-CNN_Hierarchical_Deep_ICCV_2015_paper.pdf
+
 ```
 
 ---
