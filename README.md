@@ -15,7 +15,8 @@ data/
 | Column       | Description                                                                 |
 |--------------|-----------------------------------------------------------------------------|
 | `arxiv_name` | PDF filename (e.g., `1312.6229v4.pdf`)                                      |
-| `top1_acc`   | Top-1 ImageNet accuracy **(in %)**; `NA` means no Top-1 ImageNet accuracy present  |
+| `top1_acc`   | Reported Top-1 ImageNet accuracy (**in %**); `NA` indicates not reported    |
+| `url` _(optional)_ | Direct link to the PDF (used only for non-arXiv papers)              |
 
 > `NA` → metric absent (e.g., only Top-5 or validation results are reported).
 
@@ -39,6 +40,21 @@ print(df.head(8))
 5  1503.01224v2.pdf     NA
 6  1506.04701v3.pdf     NA
 7  1510.00921v6.pdf     NA
+```
+
+---
+
+### 🌐 External URLs for Reproducibility
+
+To enhance reproducibility for non-arXiv papers (e.g., those from CVPR/ICCV/ECCV), we include an optional `url` column with the direct PDF link.  
+For arXiv papers, this field is left blank (a canonical arXiv link can be constructed from the filename if needed).
+
+**Example (CSV format):**
+
+```csv
+arxiv_name,top1_acc,url
+1312.6229v4.pdf,85.82,
+Yan_HD-CNN_Hierarchical_Deep_ICCV_2015_paper.pdf,63.34,https://openaccess.thecvf.com/content_iccv_2015/papers/Yan_HD-CNN_Hierarchical_Deep_ICCV_2015_paper.pdf
 ```
 
 ---
