@@ -1,6 +1,6 @@
 ## 📦 Dataset
 
-We release **200 ImageNet papers**, including **100 development** and **100 validation** papers, each with **ground-truth labels**.
+We release **350 ImageNet papers**, including **100 development** and **250 validation** papers, each with **ground-truth labels**.
 
 ### 📁 Directory Structure
 
