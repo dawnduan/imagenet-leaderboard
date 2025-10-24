@@ -29,34 +29,19 @@ import pandas as pd
 df = pd.read_csv('data/val_labels.csv')
 print(df.head(8))
 ```
-
-```
-       arxiv_name   top1_acc
-0  1312.6229v4.pdf     85.82
-1  1406.2732v1.pdf      NA
-2  1412.0296v1.pdf      NA
-3  1412.6598v2.pdf      NA
-4  1502.03167v3.pdf     NA
-5  1503.01224v2.pdf     NA
-6  1506.04701v3.pdf     NA
-7  1510.00921v6.pdf     NA
-```
-
 ---
-
-### 🌐 External URLs for Reproducibility
-
-To enhance reproducibility for non-arXiv papers (e.g., those from CVPR/ICCV/ECCV), we include an optional `url` column with the direct PDF link.  
-For arXiv papers, this field is left blank (a canonical arXiv link can be constructed from the filename if needed).
-
 **Example (CSV format):**
 
 ```csv
-       arxiv_name                                top1_acc                             url
+       arxiv_name                                top1_acc                             link
 90  1312.6229v4.pdf                                85.82
 91  CNN_Hierarchical_Deep_ICCV_2015_paper.pdf       NA          https://openaccess.thecvf.com/content_iccv_2015/papers/Yan_HD-CNN_Hierarchical_Deep_ICCV_2015_paper.pdf
 
 ```
+### 🌐 External URLs for Reproducibility
+
+To enhance reproducibility for non-arXiv papers (e.g., those from CVPR/ICCV/ECCV), we include an optional `url` column with the direct PDF link.  
+For arXiv papers, this field is left blank (a canonical arXiv link can be constructed from the filename if needed).
 
 ---
 
