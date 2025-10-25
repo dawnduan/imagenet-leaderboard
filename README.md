@@ -5,10 +5,15 @@ We release **360 ImageNet papers**, including **100 development**, **100 validat
 ### 📁 Directory Structure
 
 ```
-data/
-├── dev_labels.csv   # gold labels (see table below)
-├── val_labels.csv   # validation set
-├── extra_labels.csv # additional 160 manually annotated papers
+project_root/ 
+├── README.md
+└── data/
+       ├── dev_labels.csv   # gold labels (see table below)
+       ├── val_labels.csv   # validation set
+       ├── extra_labels.csv # additional 160 manually annotated papers
+└── docs/
+       ├── SectionF_Screenshots.pdf
+       ├── SectionF_Screenshots_thumbnail.png
 ```
 
 ### 🏷️ Columns
@@ -66,6 +71,21 @@ takes 1-2 hours on average.
 - **Post-annotation** (about 45h) consisted of quality checking for cross-checking (30h), data processing and dataset release (15h).  
 
 Overall, our annotation work takes approximately a total of **45+360+45=450 hours (2.5 person-months)**.
+
+---
+
+## 🖼️ Section F – Screenshots from ArXiv Papers with Extract Sections Highlighted
+
+This section provides **visual documentation** of the annotation process, illustrating how Top-1 accuracy regions were identified across representative ImageNet papers.  
+The compiled PDF below contains selected screenshots from annotated papers, highlighting the exact **tables, figure captions, and textual regions** from which Top-1 accuracy values were extracted.  
+
+Each example demonstrates either a clear extraction case (explicitly stated Top-1 accuracy) or a challenging case involving ambiguous dataset splits, table-only metrics, or validation-set references. These examples support the qualitative analysis discussed in the paper and provide transparent evidence of annotation consistency.
+
+
+### 📑 View Embedded PDF
+> ⚠️ **Note:** GitHub does **not** support embedded PDF viewing.  Upon clicking the thumbnail below, you will be redirected to the full PDF file in your browser.
+
+[![Open Section F – Screenshots PDF](docs/SectionF_Screenshots_thumnail.png)](docs/SectionF_screenshots.pdf)
 
 
 ---
