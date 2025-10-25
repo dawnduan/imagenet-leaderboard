@@ -1,6 +1,6 @@
 ## 📦 Dataset
 
-We release **350 ImageNet papers**, including **100 development** and **250 validation** papers, each with **ground-truth labels**.
+We release **360 ImageNet papers**, including **100 development**, **100 validation**, and **160 additional annotated** papers, each with **ground-truth labels**.
 
 ### 📁 Directory Structure
 
@@ -8,6 +8,7 @@ We release **350 ImageNet papers**, including **100 development** and **250 vali
 data/
 ├── dev_labels.csv   # gold labels (see table below)
 ├── val_labels.csv   # validation set
+├── extra_labels.csv # additional 150 manually annotated papers
 ```
 
 ### 🏷️ Columns
@@ -16,7 +17,7 @@ data/
 |--------------|-----------------------------------------------------------------------------|
 | `arxiv_name` | PDF filename (e.g., `1312.6229v4.pdf`)                                      |
 | `top1_acc`   | Reported Top-1 ImageNet accuracy (**in %**); `NA` indicates not reported    |
-| `url` _(optional)_ | Direct link to the PDF (used only for non-arXiv papers)              |
+| `link` _(optional)_ | Direct link to the PDF (used only for non-arXiv papers)              |
 
 > `NA` → metric absent (e.g., only Top-5 or validation results are reported).
 
@@ -40,7 +41,7 @@ print(df.head(8))
 ```
 ### 🌐 External URLs for Reproducibility
 
-To enhance reproducibility for non-arXiv papers (e.g., those from CVPR/ICCV/ECCV), we include an optional `url` column with the direct PDF link.  
+To enhance reproducibility for non-arXiv papers (e.g., those from CVPR/ICCV/ECCV), we include an optional `link` column with the direct PDF link.  
 For arXiv papers, this field is left blank (a canonical arXiv link can be constructed from the filename if needed).
 
 ---
