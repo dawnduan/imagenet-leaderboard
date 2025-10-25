@@ -8,7 +8,7 @@ We release **360 ImageNet papers**, including **100 development**, **100 validat
 data/
 ├── dev_labels.csv   # gold labels (see table below)
 ├── val_labels.csv   # validation set
-├── extra_labels.csv # additional 150 manually annotated papers
+├── extra_labels.csv # additional 160 manually annotated papers
 ```
 
 ### 🏷️ Columns
