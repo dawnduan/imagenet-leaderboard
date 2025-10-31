@@ -14,6 +14,11 @@ project_root/
 └── docs/
        ├── SectionF_Screenshots.pdf
        ├── SectionF_Screenshots_thumbnail.png
+       ├── SectionF_Screenshots_p15.png
+       ├── SectionF_Screenshots_p16.png
+       ├── SectionF_Screenshots_p17.png
+       ├── SectionF_Screenshots_p18.png
+       ├── SectionF_Screenshots_p19.png
 ```
 
 ### 🏷️ Columns
@@ -83,9 +88,13 @@ Each example demonstrates either a clear extraction case (explicitly stated Top-
 
 
 ### 📑 View Embedded PDF
-> ⚠️ **Note:** GitHub does **not** support embedded PDF viewing.  Upon clicking the thumbnail below, you will be redirected to the full PDF file in your browser.
+> ⚠️ **Note:** GitHub does **not** support embedded PDF viewing.  Upon clicking the page below, you will be redirected to the full PDF file in your browser.
 
-[![Open Section F – Screenshots PDF](docs/SectionF_Screenshots_thumnail.png)](docs/SectionF_screenshots.pdf)
+[![Page 15](docs/SectionF_Screenshots_p15.png)](docs/SectionF_Screenshots.pdf)
+[![Page 16](docs/SectionF_Screenshots_p16.png)](docs/SectionF_Screenshots.pdf)
+[![Page 17](docs/SectionF_Screenshots_p17.png)](docs/SectionF_Screenshots.pdf)
+[![Page 18](docs/SectionF_Screenshots_p18.png)](docs/SectionF_Screenshots.pdf)
+[![Page 19](docs/SectionF_Screenshots_p19.png)](docs/SectionF_Screenshots.pdf)
 
 
 ---
