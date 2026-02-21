@@ -1,24 +1,21 @@
 ## 📦 Dataset
 
-We release **360 ImageNet papers**, including **100 development**, **100 validation**, and **160 additional annotated** papers, each with **ground-truth labels**.
+We release **380 ImageNet papers**, including **280 development**, **100 validation**, each with **ground-truth labels**.
 
 ### 📁 Directory Structure
 
 ```
-project_root/ 
+project_root/
 ├── README.md
 └── data/
-       ├── dev_labels.csv   # gold labels (see table below)
-       ├── val_labels.csv   # validation set
-       ├── extra_labels.csv # additional 160 manually annotated papers
+       ├── dev_labels.csv        # gold labels for 280 dev papers (see table below)
+       ├── val_labels.csv      # validation set (100 papers)
+       ├── Supplementary_mat.pdf # full supplementary material (25 pages)
 └── docs/
-       ├── SectionF_Screenshots.pdf
-       ├── SectionF_Screenshots_thumbnail.png
-       ├── SectionF_Screenshots_p15.png
-       ├── SectionF_Screenshots_p16.png
-       ├── SectionF_Screenshots_p17.png
-       ├── SectionF_Screenshots_p18.png
-       ├── SectionF_Screenshots_p19.png
+       ├── Supplementary_mat_p01.png  # page screenshots of supplementary PDF
+       ├── Supplementary_mat_p02.png
+       ├── ...
+       └── Supplementary_mat_p25.png
 ```
 
 ### 🏷️ Columns
@@ -39,7 +36,7 @@ project_root/
 ```python
 import pandas as pd
 df = pd.read_csv('data/val_labels.csv')
-print(df.head(8))
+print(df.head(2))
 ```
 ---
 **Example (CSV format):**
@@ -58,43 +55,44 @@ For arXiv papers, this field is left blank (a canonical arXiv link can be constr
 ---
 ## 📊 Metric Presence Summary
 
-| Metric Presence | Development Set | Validation Set | Extra labels |
-|------------------|-----------------|----------------|----------------------|
-| **Ground-truth Present** | 26 | 27 | 25 |
-| **Ground-truth Absent**  | 74 | 73 | 135 |
-| **Total**                | 100 | 100 | 160 |
+| Metric Presence | Development Set | Validation Set |
+|------------------|-----------------|----------------|
+| **Ground-truth Present** | 54 | 27 |
+| **Ground-truth Absent**  | 226 | 73 |
+| **Total**                | 280 | 100 |
 
-## 💰 Annotation Costs
 
-The manual data annotation work has been done by the first author of the paper. Therefore, no compensation costs were incurred for data collection/annotation.  
-The time investment for the annotation work on a total of **360 papers** is detailed below:
-
-- **Pre-annotation** (about 45 hours) included the development of annotation schema (10h), the writing of annotation guideline (5h), label-verification protocol (10h), preliminary annotation and personalized feedback (20h).  
-- **Annotation** (about 360 h) covered a total of
-360 papers as annotating individual document
-takes 1-2 hours on average.  
-- **Post-annotation** (about 45h) consisted of quality checking for cross-checking (30h), data processing and dataset release (15h).  
-
-Overall, our annotation work takes approximately a total of **45+360+45=450 hours (2.5 person-months)**.
-
----
-
-## 🖼️ Section F – Screenshots from ArXiv Papers with Extract Sections Highlighted
-
-This section provides **visual documentation** of the annotation process, illustrating how Top-1 accuracy regions were identified across representative ImageNet papers.  
-The compiled PDF below contains selected screenshots from annotated papers, highlighting the exact **tables, figure captions, and textual regions** from which Top-1 accuracy values were extracted.  
-
-Each example demonstrates either a clear extraction case (explicitly stated Top-1 accuracy) or a challenging case involving ambiguous dataset splits, table-only metrics, or validation-set references. These examples support the qualitative analysis discussed in the paper and provide transparent evidence of annotation consistency.
+## 🖼️ Section F – Supplementary Materials
 
 
 ### 📑 View Embedded PDF
-> ⚠️ **Note:** GitHub does **not** support embedded PDF viewing.  Upon clicking the page below, you will be redirected to the full PDF file in your browser.
+> ⚠️ **Note:** GitHub does **not** support embedded PDF viewing. Upon clicking a page image below, you will be redirected to the full PDF file in your browser.
 
-[![Page 15](docs/SectionF_Screenshots_p15.png)](docs/SectionF_Screenshots.pdf)
-[![Page 16](docs/SectionF_Screenshots_p16.png)](docs/SectionF_Screenshots.pdf)
-[![Page 17](docs/SectionF_Screenshots_p17.png)](docs/SectionF_Screenshots.pdf)
-[![Page 18](docs/SectionF_Screenshots_p18.png)](docs/SectionF_Screenshots.pdf)
-[![Page 19](docs/SectionF_Screenshots_p19.png)](docs/SectionF_Screenshots.pdf)
+[![Page 1](docs/Supplementary_mat_p01.png)](Supplementary_mat.pdf)
+[![Page 2](docs/Supplementary_mat_p02.png)](Supplementary_mat.pdf)
+[![Page 3](docs/Supplementary_mat_p03.png)](Supplementary_mat.pdf)
+[![Page 4](docs/Supplementary_mat_p04.png)](Supplementary_mat.pdf)
+[![Page 5](docs/Supplementary_mat_p05.png)](Supplementary_mat.pdf)
+[![Page 6](docs/Supplementary_mat_p06.png)](Supplementary_mat.pdf)
+[![Page 7](docs/Supplementary_mat_p07.png)](Supplementary_mat.pdf)
+[![Page 8](docs/Supplementary_mat_p08.png)](Supplementary_mat.pdf)
+[![Page 9](docs/Supplementary_mat_p09.png)](Supplementary_mat.pdf)
+[![Page 10](docs/Supplementary_mat_p10.png)](Supplementary_mat.pdf)
+[![Page 11](docs/Supplementary_mat_p11.png)](Supplementary_mat.pdf)
+[![Page 12](docs/Supplementary_mat_p12.png)](Supplementary_mat.pdf)
+[![Page 13](docs/Supplementary_mat_p13.png)](Supplementary_mat.pdf)
+[![Page 14](docs/Supplementary_mat_p14.png)](Supplementary_mat.pdf)
+[![Page 15](docs/Supplementary_mat_p15.png)](Supplementary_mat.pdf)
+[![Page 16](docs/Supplementary_mat_p16.png)](Supplementary_mat.pdf)
+[![Page 17](docs/Supplementary_mat_p17.png)](Supplementary_mat.pdf)
+[![Page 18](docs/Supplementary_mat_p18.png)](Supplementary_mat.pdf)
+[![Page 19](docs/Supplementary_mat_p19.png)](Supplementary_mat.pdf)
+[![Page 20](docs/Supplementary_mat_p20.png)](Supplementary_mat.pdf)
+[![Page 21](docs/Supplementary_mat_p21.png)](Supplementary_mat.pdf)
+[![Page 22](docs/Supplementary_mat_p22.png)](Supplementary_mat.pdf)
+[![Page 23](docs/Supplementary_mat_p23.png)](Supplementary_mat.pdf)
+[![Page 24](docs/Supplementary_mat_p24.png)](Supplementary_mat.pdf)
+[![Page 25](docs/Supplementary_mat_p25.png)](Supplementary_mat.pdf)
 
 
 ---
